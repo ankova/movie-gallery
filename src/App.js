@@ -73,10 +73,10 @@ const App = () => {
     return ( 
       <div className="App">
         <div className="App-header">
-          <h2>Welcome to React</h2>
+          <h2>Playing Movies</h2>
         </div>
 
-        <div>
+        <div className="movie-genres">
           {genres.map(genre => 
             <Checkbox key={genre.id} name={genre.name} onChange={e => handleSelectGenre(e, genre)} />)}
         </div>

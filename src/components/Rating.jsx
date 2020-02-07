@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState } from 'react';
 
 
 const Rating = (props) => {
@@ -11,8 +11,8 @@ const Rating = (props) => {
     }
 
     return (
-        <div>
-            <label htmlFor="rating">Rating ({value})</label>
+        <div className="raiting">
+            <label htmlFor="rating">Sort by rating {value}</label>
             <input type="range" id="rating" name="cowbell" 
                 min="0" max="10" defaultValue="3" step="0.5" onChange={handleChange}/>
         </div>

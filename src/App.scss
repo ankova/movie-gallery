@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans|Saira+Condensed&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Kaushan Script', cursive;
+  height: 70px;
+  padding: 20px;
+  color: wheat;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.raiting {
+  margin-top: 2em;
+  display: inline-block;
+  width: min-content;
+
+  input[type="range" i] {
+    cursor: grab;
+    vertical-align: bottom;
+    margin-top: 1em;
+  }
+}
+.movie-genres {
+  width: 80%;
+  margin: auto;
+  margin-top: 1em;
+
+  label {
+    display: inline-flex;
+    margin: 0.2em 0.5em;
+  }
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: auto;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Saira Condensed', sans-serif;
+
+  ul {
+    padding: 0;
+
+    li {
+      box-sizing: border-box;
+      max-width: 220px;
+      display: inline-block;
+      margin: 1em;
+  
+      img {
+        width: 220px;
+      }
+    }
+  }
+
+  genres {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: space-between;
+    background: black;
+    height: 3em;
+
+    h6 {
+      flex-flow: row;
+      flex: auto;
+    }
+  }
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

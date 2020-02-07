@@ -5,7 +5,6 @@ const Checkbox = (props) => {
 
     return (
         <Fragment>
-            
             <label>
                 <input type="checkbox" value={name} onChange={onChange}/>
                 {name} 
