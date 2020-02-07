@@ -2,8 +2,8 @@ import React, { Component, useState, useEffect } from 'react';
 import axios from 'axios';
 
 import './App.css';
-import MovieList from './components/MovieList/MovieList';
-import Checkbox from './components/Checkbox/Checkbox';
+import MovieList from './components/MovieList';
+import Checkbox from './components/Checkbox';
 import Rating from './components/Rating';
 
 const App = () => {
