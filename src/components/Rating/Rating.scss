@@ -1,0 +1,11 @@
+.Raiting {
+    margin-top: 2em;
+    display: inline-block;
+    width: min-content;
+  
+    input[type="range" i] {
+      cursor: grab;
+      vertical-align: bottom;
+      margin-top: 1em;
+    }
+  }

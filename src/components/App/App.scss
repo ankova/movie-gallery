@@ -1,0 +1,28 @@
+/*TO DO
+//Extract all fonts and colours in separate file as variables
+*/
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans|Saira+Condensed&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Kaushan Script', cursive;
+  height: 70px;
+  padding: 20px;
+  color: wheat;
+}
+
+.movie-genres {
+  width: 80%;
+  margin: auto;
+  margin-top: 1em;
+
+  label {
+    display: inline-flex;
+    margin: 0.2em 0.5em;
+  }
+}
