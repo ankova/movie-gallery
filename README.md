@@ -1,6 +1,5 @@
-# Project Title
+# Movie Gallery
 
-Movie Gallery
 
 ## Getting Started
 
@@ -10,17 +9,18 @@ These instructions will get you a copy of the project up and running on your loc
 
 To start the project run:
 
-npm install
+#### npm install
 
 ### Start the project
 In the project directory, you can run:
 
-npm start
+#### npm start
 
 Runs the app in the development mode.
 Open http://localhost:3000 to view it in the browser.
 
 ## Running the tests
 
-npm test
+#### npm test
+
 Launches the test runner in the interactive watch mode.
