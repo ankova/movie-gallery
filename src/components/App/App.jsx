@@ -15,7 +15,7 @@ const App = () => {
 
   useEffect(() => {
     //Fetch all genres and set to state
-    axios.get('https://api.themoviedb.org/3/genre/movie/list?api_key=89c84ad4507eac89b10fd0706f10f092&language=en-US?')
+     axios.get('https://api.themoviedb.org/3/genre/movie/list?api_key=89c84ad4507eac89b10fd0706f10f092&language=en-US?')
     .then(response => {
       if(response.status === 200) {
       return response.data;
@@ -30,7 +30,7 @@ const App = () => {
         if(response.status === 200) {
         return response.data;
       }})
-      .then(response => {
+      .then(async response => {
             let results = response.results.map(movie =>
                 ({ 
                   ...movie,  
@@ -42,7 +42,7 @@ const App = () => {
                 })
               )
               
-            return (results) //returns the modified object
+            return (await results) //returns the modified object
           })
           
       .then(results => setMovies(results)) // adds the modified object to the state

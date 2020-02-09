@@ -4,34 +4,38 @@
 .movie-list {
   display: grid;
   grid-template-columns: auto;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Kaushan Script', cursive;
   font-family: 'Saira Condensed', sans-serif; }
-  .movie-list ul {
-    padding: 0; }
-    .movie-list ul li {
-      box-sizing: border-box;
-      max-width: 220px;
-      display: inline-block;
-      margin: 1em; }
-      .movie-list ul li img {
-        width: 220px; }
-  .movie-list .genres {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    align-content: space-between;
-    background: black;
-    height: 3em; }
-    .movie-list .genres h6 {
-      flex-flow: row;
-      flex: auto; }
+
+.movie-list ul {
+  padding: 0; }
+
+.movie-list ul li {
+  box-sizing: border-box;
+  max-width: 220px;
+  display: inline-block;
+  margin: 1em; }
+
+.movie-list ul li img {
+  width: 220px; }
+
+.movie-list .genres {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: space-between;
+  background: black;
+  height: 3em; }
+
+.movie-list .genres h6 {
+  flex-flow: row;
+  flex: auto; }
 
 .movie-genres {
   width: 80%;
   margin: auto;
   margin-top: 1em; }
-  .movie-genres label {
-    display: inline-flex;
-    margin: 0.2em 0.5em; }
+
+.movie-genres label {
+  display: inline-flex;
+  margin: 0.2em 0.5em; }
