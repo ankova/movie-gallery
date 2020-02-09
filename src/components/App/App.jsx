@@ -17,13 +17,21 @@ const App = () => {
     //Fetch all genres and set to state
     axios.get('https://api.themoviedb.org/3/genre/movie/list?api_key=89c84ad4507eac89b10fd0706f10f092&language=en-US?')
     .then(response => {
-      const genres = response.data.genres;
+      if(response.status === 200) {
+      return response.data;
+    }})
+    .then(response => {
+      const genres = response.genres;
       setGenres(genres)
 
       //Fetch all now playing movies
       axios.get('https://api.themoviedb.org/3/movie/now_playing?api_key=89c84ad4507eac89b10fd0706f10f092&language=en-US&page=1')
       .then(response => {
-            let results = response.data.results.map(movie =>
+        if(response.status === 200) {
+        return response.data;
+      }})
+      .then(response => {
+            let results = response.results.map(movie =>
                 ({ 
                   ...movie,  
                   poster_path: `https://image.tmdb.org/t/p/w500${movie.poster_path}`, //adds full path to poster image
@@ -89,9 +97,7 @@ const App = () => {
          
         <Rating onChange={handleRatingChange} />
 
-        <div>
-          <MovieList movies={filteredMovies} />
-        </div>
+        <MovieList movies={filteredMovies} />
         
       </div>
     );

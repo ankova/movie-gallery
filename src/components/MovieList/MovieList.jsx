@@ -15,9 +15,9 @@ const MovieList = (props) => {
                     <li key={movie.id}>
                         <div>
                             <h3>{movie.original_title}</h3>
-                            <genres className="genres">
+                            <div className="genres">
                                 {movie.genres.map((genre,i) => <h6 key={i}>{genre}</h6> )}
-                            </genres>
+                            </div>
                             <img src={movie.poster_path} />
                         </div>
                     </li> 
