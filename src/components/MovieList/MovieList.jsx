@@ -3,8 +3,7 @@ import React, {useEffect, useState} from 'react';
 import './MovieList.css';
 
 const MovieList = (props) => {
-    let [movieList, setMovieList] = useState([]);
-    let movies = movieList;
+    let [movies, setMovieList] = useState([]);
 
     useEffect(() => setMovieList(props.movies))
 
